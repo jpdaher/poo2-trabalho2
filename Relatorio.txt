@@ -1,0 +1,27 @@
+Projeto 1: Banco
+
+Esse projeto implementa o padrão de projeto Factory Method para criar diferentes tipos de contas:
+- Conta Corrente: pode realizar saques, depósitos, transferências internas e Pix;
+- Conta Poupança: tem limites de saques mensais gratuitos, pode render e só transfere para contas do mesmo cliente;
+- Conta Salário: realiza operações básicas como saques e depósitos, mas não realiza Pix.
+
+A Main desse projeto faz uma breve demonstração de funcionamento, criando um banco, uma filial, dois clientes e suas contas, e realiza uma transferência entre os clientes, além de mostrar o saldo final dos dois.
+
+O projeto conta com 9 arquivos:
+- Account, AccountFactories, CurrentAccount, SalaryAccount, SavingsAccount: definem e implementam as interfaces e classes necessárias para a parte das contas dos clientes;
+- Bank, Branch: definem as classes de banco e filial;
+- Client: define a classe de cliente;
+- Main: ponto de entrada do programa.
+
+Projeto 2: Lanchonete 
+
+Esse projeto implementa os padrões de projeto Observer, para monitorar os pedidos realizados, e Decorator, para montar de maneira eficiente pedidos diferentes, com uma base e elementos complementares.
+
+A Main desse projeto é uma interface de simples interação, que funciona como um atendente que criará o pedido com base nas suas preferências.
+
+O projeto conta com 5 arquivos:
+- Hamburguer: define a classe abstrata e concreta para um hamburguer simples;
+- Ingredientes: define a classe abstrata para um ingrediente extra, e define diversos ingredientes concretos (Queijo, Bacon, Ovo, Alface, Tomate) que, ao serem adicionados ao Hamburguer base, modificam a descrição e aumentam o preço;
+- Observer: define a classe abstrata para um observador, e depois define as classes concretas para os monitores de pedidos;
+- Pedido: sujeito da observação, notificará os observadores a cada mudança no pedido;
+- Main: ponto de entrada do programa.
